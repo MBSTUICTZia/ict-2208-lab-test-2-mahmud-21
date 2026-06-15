@@ -50,7 +50,14 @@ public class ShapeMain {
                 System.out.println("Circle radius=" + c.getRadius());
             }
         }
-
+        // ── TASK 6 — Abstract class (written answer) ──────────
+        // What error does the compiler give if you write:
+        //     Shape s = new Shape("Red", true);
+        //
+        // ANSWER: error: Shape is abstract; cannot be instantiated
+        // The compiler refuses to instantiate an abstract class directly
+        // because Shape has abstract methods (getArea, getPerimeter)
+        // with no implementation. You must instantiate a concrete subclass.
         Mahmud.close();
     }
 }
