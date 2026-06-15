@@ -15,3 +15,4 @@ public abstract class Shape {
     public String toString() {
         return "Color : " + color + "\nFilled: " + (filled ? "Yes" : "No");
     }
+}
